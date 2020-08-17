@@ -1,0 +1,44 @@
+import matplotlib.path as mplPath # https://matplotlib.org/api/path_api.html
+import numpy as np # array processing package
+#defines points in polygon as an array
+Polygon=mplPath.Path(np.array([[4,3],[2,6],[3,12],[2,17],[5,20],[9,21],[14,19],[20,14],[18,3],[11,7]]))
+if Polygon.contains_point((7,11))==True:
+    print("(7,11)Inside")
+else:
+    print ("(7,11)Outside")
+if Polygon.contains_point((10,14))==True:
+    print("(10,14)Inside")
+else:
+    print ("(10,4)Outside")
+if Polygon.contains_point((11,4))==True:
+    print("(11,4)Inside")
+else:
+    print ("(11,4)Outside")
+if Polygon.contains_point((12,21))==True:
+    print("(12,21)Inside")
+else:
+    print ("(12,21)Outside")
+if Polygon.contains_point((16,3))==True:
+    print("(16,3)Inside")
+else:
+    print ("(16,3)Outside")
+if Polygon.contains_point((16,10))==True:
+    print("(16,10)Inside")
+else:
+    print ("(16,10)Outside")
+if Polygon.contains_point((17,4))==True:
+    print("(17,4)Inside")
+else:
+    print ("(17,4)Outside")
+if Polygon.contains_point((18,7))==True:
+    print("(18,7)Inside")
+else:
+    print ("(18,7)Outside")
+if Polygon.contains_point((18,17))==True:
+    print("(18,17)Inside")
+else:
+    print ("(18,17)Outside")
+if Polygon.contains_point((16,3))==True:
+    print("(20,7)Inside")
+else:
+    print ("(20,7)Outside")
